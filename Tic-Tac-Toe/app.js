@@ -1,5 +1,5 @@
 const gameBoard = [
-  ["O", null, null],
+  [null, null, null],
   [null, null, null],
   [null, null, null],
 ];
@@ -48,6 +48,121 @@ while (!gameOver) {
   }
 
   //check rows for 3 matching X end turn
+  // 1st row
+  if (
+    gameBoard[0][0] === gameBoard[0][1] &&
+    gameBoard[0][1] === gameBoard[0][2]
+  ) {
+    if (gameBoard[0][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 2nd row
+  } else if (
+    gameBoard[1][0] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[1][2]
+  ) {
+    if (gameBoard[1][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[1][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 3rd row
+  } else if (
+    gameBoard[2][0] === gameBoard[2][1] &&
+    gameBoard[2][1] === gameBoard[2][2]
+  ) {
+    if (gameBoard[2][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[2][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 1st column
+  } else if (
+    gameBoard[0][0] === gameBoard[1][0] &&
+    gameBoard[1][0] === gameBoard[2][0]
+  ) {
+    if (gameBoard[0][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 2dn column
+  } else if (
+    gameBoard[0][1] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[2][1]
+  ) {
+    if (gameBoard[0][1] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][1] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 3rd column
+  } else if (
+    gameBoard[0][2] === gameBoard[1][2] &&
+    gameBoard[1][2] === gameBoard[2][2]
+  ) {
+    if (gameBoard[0][2] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][2] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // diagonally from left top to right bottom
+  } else if (
+    gameBoard[0][0] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[2][2]
+  ) {
+    if (gameBoard[0][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // diagonally from right top to left bottom
+  } else if (
+    gameBoard[0][2] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[2][0]
+  ) {
+    if (gameBoard[0][2] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][2] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+  } else {
+    console.log("no winner");
+  }
 
   // *Player O turn
   console.log("Turn of 'O'");
@@ -83,7 +198,124 @@ while (!gameOver) {
     //same stuff with O
     console.log(gameBoard);
   }
+
   //check rows for 3 matching O end turn
+  // 1st row
+  if (
+    gameBoard[0][0] === gameBoard[0][1] &&
+    gameBoard[0][1] === gameBoard[0][2]
+  ) {
+    if (gameBoard[0][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 2nd row
+  } else if (
+    gameBoard[1][0] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[1][2]
+  ) {
+    if (gameBoard[1][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[1][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 3rd row
+  } else if (
+    gameBoard[2][0] === gameBoard[2][1] &&
+    gameBoard[2][1] === gameBoard[2][2]
+  ) {
+    if (gameBoard[2][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[2][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 1st column
+  } else if (
+    gameBoard[0][0] === gameBoard[1][0] &&
+    gameBoard[1][0] === gameBoard[2][0]
+  ) {
+    if (gameBoard[0][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 2dn column
+  } else if (
+    gameBoard[0][1] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[2][1]
+  ) {
+    if (gameBoard[0][1] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][1] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // 3rd column
+  } else if (
+    gameBoard[0][2] === gameBoard[1][2] &&
+    gameBoard[1][2] === gameBoard[2][2]
+  ) {
+    if (gameBoard[0][2] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][2] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // diagonally from left top to right bottom
+  } else if (
+    gameBoard[0][0] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[2][2]
+  ) {
+    if (gameBoard[0][0] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][0] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+    // diagonally from right top to left bottom
+  } else if (
+    gameBoard[0][2] === gameBoard[1][1] &&
+    gameBoard[1][1] === gameBoard[2][0]
+  ) {
+    if (gameBoard[0][2] === "X") {
+      console.log("X WINS");
+      break;
+    } else if (gameBoard[0][2] === "O") {
+      console.log("O WINS");
+      break;
+    } else {
+      console.log("no winner");
+    }
+  } else {
+    console.log("no winner");
+  }
 }
 
 console.log(gameBoard);
+console.log("game end");

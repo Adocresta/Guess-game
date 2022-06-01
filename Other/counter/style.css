@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* start */
+body {
+  background-color: #ffecd1;
+}
+
+header {
+  display: grid;
+  background-color: #15616d;
+  min-height: 5vh;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: rgb(156, 156, 156) solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+div.nav {
+  margin: 1vh auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+}
+
+ul {
+  margin-top: 0.3em;
+  max-width: 600px;
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  border: 2px #ffecd1 solid;
+  background-color: aliceblue;
+  border-radius: 2em;
+  padding: 0.5em 1em 0.5em 1em;
+  animation-delay: 1s;
+  letter-spacing: 1px;
+  margin-left: 1em;
+}
+
+li > a.login-btn {
+  background-color: #284b63;
+  color: white;
+  border: 2px white solid;
+}
+
+a:hover,
+a:focus-visible {
+  background-color: beige;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  transition: 1s;
+  transform: translateY(-3px);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+h2 {
+  color: beige;
+  margin-top: 0.2em;
+  font-size: 2rem;
+  border-top: #779da3 solid 2px;
+}
+h2:hover {
+  color: bisque;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40%;
+  padding-top: 20%;
+}
+
+main h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+main p {
+  text-align: center;
+  font-size: 3em;
+  color: green;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+div.btns {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}

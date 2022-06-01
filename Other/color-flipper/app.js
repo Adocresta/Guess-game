@@ -8,6 +8,7 @@ btn.addEventListener("click", function () {
   // get a number number between 0-3
   let newNumber = getRndInteger(0, 4);
   let randomNumber = getRndInteger(0, 4);
+  //!todo add a random factor that gives different color each click
   console.log(`random number : ${randomNumber} `);
   if (newNumber === randomNumber) {
     randomNumber = getRndInteger(0, 4);
